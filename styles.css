@@ -25,11 +25,14 @@ header {
 nav {
     position: fixed;
     width: 100%;
-    top: 10px;
+    top: 0px;
     left: 0;
-    background: transparent;
+    backdrop-filter: blur(2rem);
+    background: rgba(0, 0, 0, 0.);
     padding: 20px 0;
     z-index: 1000;
+    padding: 0;
+    line-height: 3;
 }
 
 nav ul {
@@ -73,6 +76,13 @@ nav ul li a.active {
     justify-content: center;
     height: 100vh;
     text-align: center;
+}
+.half-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  text-align: center;
 }
 
 .welcome-text {
@@ -203,3 +213,109 @@ section {
 
   
 }    
+
+#about {
+    background-image: url('./assets/PicsArt_04-30-02.47.17.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    background-attachment: fixed;
+}
+.about-card {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  max-height: 700px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(203, 209, 18, 0.1);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color: #d1b13e;
+  transition: all 0.5s ease;
+}
+
+.about-card:hover {
+  background: rgba(165, 37, 155, 0.2);
+  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.2);
+}
+
+.about-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.about-content {
+  max-width: 600px;
+  flex-grow: 1; /* Added to make the content wrap */
+}
+
+.about-content h2 {
+  margin-top: 0;
+}
+
+
+@media (max-width: 768px) {
+  .about-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      width: 90%; /* Full width with some padding */
+      margin: 0 auto; /* Center align on mobile */
+  }
+
+  .about-card img {
+      margin-bottom: 20px;
+      width: 100px; /* Reduce the size of the image */
+      height: 100px;
+  }
+
+  .about-content {
+      max-width: 100%; /* Full width content */
+  }
+
+  .social-icons {
+      justify-content: center;
+      flex-wrap: wrap; /* Allow wrapping if needed */
+  }
+
+ 
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 24px; /* Adjusted size for smaller icons */
+  height: 24px; /* Adjusted size for smaller icons */
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+.social-icons a:hover img {
+  filter: invert(100%);
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .social-icons a img {
+      width: 20px; /* Further adjusted size for smaller screens */
+      height: 20px; /* Further adjusted size for smaller screens */
+  }
+}
+
