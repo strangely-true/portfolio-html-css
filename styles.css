@@ -224,10 +224,12 @@ section {
     background-position: center;
     height: 60vh;
     background-attachment: fixed;
+    height: auto;
 }
 .about-card {
   position: relative;
   width: 90%;
+ 
   max-width: 900px;
   max-height: 700px;
   padding: 20px;
