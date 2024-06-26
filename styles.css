@@ -316,7 +316,6 @@ section {
   .social-icons {
       justify-content: center;
       flex-wrap: wrap;
-      filter: invert(100%);
   }
 
   .social-icons a img {
@@ -329,7 +328,6 @@ section {
 /* now I'll develop the skills section and do the styling for it */
 
 /* Skills Section Styles */
-/* Skills Section Styles */
 .skills-section {
   background-image: url('./assets/PicsArt_22-03-30_18-59-03-729.jpg');
   background-size: cover;
@@ -341,14 +339,11 @@ section {
   position: relative;
   z-index: 1;
   filter: brightness(100%); /* Dim the background image */
-}
 
-@media (max-width: 568px) {
-  .skills-section {
-     /* Change to scroll on smaller screens */
-    height: auto; /* Allow the height to adjust based on content */
-    padding: 30px 10px; /* Adjust padding for smaller screens */
-  }
+  /* Change to scroll on smaller screens */
+  height: auto; /* Allow the height to adjust based on content */
+  padding: 30px 10px; /* Adjust padding for smaller screens */
+  
 }
 
 
