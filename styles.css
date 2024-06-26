@@ -345,10 +345,9 @@ section {
 
 @media (max-width: 568px) {
   .skills-section {
-    background-attachment: scroll; /* Change to scroll on smaller screens */
+     /* Change to scroll on smaller screens */
     height: auto; /* Allow the height to adjust based on content */
     padding: 30px 10px; /* Adjust padding for smaller screens */
-    background-position: top center; /* Straighten the background image on mobile */
   }
 }
 
