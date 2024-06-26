@@ -132,7 +132,7 @@ section {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
 
    
     .menu {
@@ -264,7 +264,7 @@ section {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .about-card {
       flex-direction: column;
       align-items: center;
@@ -312,15 +312,90 @@ section {
   transition-duration:  0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .social-icons {
       justify-content: center;
       flex-wrap: wrap;
+      filter: invert(100%);
   }
 
   .social-icons a img {
       width: 20px; /* Further adjusted size for smaller screens */
       height: 20px; /* Further adjusted size for smaller screens */
   }
+}
+
+
+/* now I'll develop the skills section and do the styling for it */
+
+/* Skills Section Styles */
+/* Skills Section Styles */
+.skills-section {
+  background-image: url('./assets/PicsArt_22-03-30_18-59-03-729.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  background-attachment: fixed;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  filter: brightness(100%); /* Dim the background image */
+}
+
+@media (max-width: 568px) {
+  .skills-section {
+    background-attachment: scroll; /* Change to scroll on smaller screens */
+    height: auto; /* Allow the height to adjust based on content */
+    padding: 30px 10px; /* Adjust padding for smaller screens */
+    background-position: top center; /* Straighten the background image on mobile */
+  }
+}
+
+
+
+.skills-section h1 {
+  margin-bottom: 50px;
+  font-size: 2.5em;
+  color: white;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  color: #28c8a8;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(24px);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 56, 185, 0.282);
+  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.skills-used span {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 0.9em;
 }
 
