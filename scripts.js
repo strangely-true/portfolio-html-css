@@ -8,3 +8,4 @@ document.querySelector('.menu').addEventListener('click', function() {
       document.querySelector('.quote-phone').classList.toggle('hiddenquote');
     });
   });
+

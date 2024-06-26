@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -128,7 +132,7 @@ section {
 }
 
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
 
    
     .menu {
@@ -218,7 +222,7 @@ section {
     background-image: url('./assets/PicsArt_04-30-02.47.17.jpg');
     background-size: cover;
     background-position: center;
-    height: 55vh;
+    height: 60vh;
     background-attachment: fixed;
 }
 .about-card {
@@ -233,12 +237,12 @@ section {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  color: #d1b13e;
+  color: #28c8a8;
   transition: all 0.5s ease;
 }
 
-.about-card:hover {
-  background: rgba(165, 37, 155, 0.2);
+.about-card:hover{
+  background: rgba(255, 56, 185, 0.282);
   box-shadow: 0 8px 60px rgba(0, 0, 0, 0.2);
 }
 
@@ -291,20 +295,21 @@ section {
   display: flex;
   gap: 10px;
   margin-top: 10px;
+  justify-content: center;
 }
 
 .social-icons a img {
+  border-radius: 0%;
+  object-fit: contain;
   width: 24px; /* Adjusted size for smaller icons */
   height: 24px; /* Adjusted size for smaller icons */
-  transition: transform 0.3s ease;
+  transition:  0.3s ease;
 }
 
 .social-icons a:hover img {
-  transform: scale(1.1);
-}
-
-.social-icons a:hover img {
+  transform: scale(1.2);
   filter: invert(100%);
+  transition-duration:  0.3s;
 }
 
 @media (max-width: 768px) {
