@@ -222,7 +222,7 @@ section {
     background-image: url('./assets/PicsArt_04-30-02.47.17.jpg');
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    min-height: 60vh;
     background-attachment: fixed;
     height: auto;
 }
