@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     color: #938b59;
-    background-color: #070706;
+    background-color: #000000;
 }
   
   ::-webkit-scrollbar {
@@ -231,7 +231,7 @@ section {
   width: 90%;
  
   max-width: 900px;
-  max-height: 700px;
+  margin: 0 auto;
   padding: 20px;
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 30px rgba(203, 209, 18, 0.1);
@@ -266,7 +266,7 @@ section {
 }
 
 
-@media (max-width: 568px) {
+@media (max-width: 968px) {
   .about-card {
       flex-direction: column;
       align-items: center;
@@ -289,6 +289,7 @@ section {
   .social-icons {
       justify-content: center;
       flex-wrap: wrap; /* Allow wrapping if needed */
+       /* Adjust padding for smaller screens */
   }
 
  
@@ -305,19 +306,23 @@ section {
   object-fit: contain;
   width: 24px; /* Adjusted size for smaller icons */
   height: 24px; /* Adjusted size for smaller icons */
-  transition:  0.3s ease;
+  transition: transform 0.3s;
 }
 
 .social-icons a:hover img {
   transform: scale(1.2);
   filter: invert(100%);
-  transition-duration:  0.3s;
+  transition-duration: 0.3s;
 }
 
 @media (max-width: 568px) {
   .social-icons {
       justify-content: center;
       flex-wrap: wrap;
+  }
+
+  .social-icons a {
+      margin: 5px; /* Adjusted margin for better spacing */
   }
 
   .social-icons a img {
@@ -353,7 +358,7 @@ section {
 .skills-section h1 {
   margin-bottom: 50px;
   font-size: 2.5em;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .skills-container {
@@ -363,7 +368,7 @@ section {
 }
 
 .skill-card {
-  color: #28c8a8;
+  color: #98e2ff;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(24px);
   border-radius: 15px;
@@ -376,22 +381,82 @@ section {
 
 .skill-card:hover {
   transform: translateY(-10px);
-  background: rgba(255, 56, 185, 0.282);
+  background: rgb(0, 0, 0);
   box-shadow: 0 8px 60px rgba(0, 0, 0, 0.2);
 }
 
 .skill-icon {
-  font-size: 2em;
+  font-size: 0;
   margin-bottom: 10px;
+  color: #98e2ff;
 }
 
 .skills-used span {
   display: inline-block;
+  align-items:center;
   background: rgba(0, 0, 0, 0.8);
-  color: white;
+  color: rgb(252, 175, 161);
   border-radius: 5px;
   padding: 5px 10px;
   margin: 5px;
   font-size: 0.9em;
 }
 
+
+
+/* 3 way portfolio section */
+#portfolio {
+  background-image: url('./assets/PicsArt_22-03-30_18-58-49-485.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.portfolio-button {
+  display: inline-block;
+  width: 300px;
+  height: 600px; /* Placeholder background image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fffcfc;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  margin: 40px;
+}
+
+.portfolio-button:hover {
+  transform: scale(1.1);
+}
+
+.portfolio-button span {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-100%);
+  background: rgba(0, 0, 0, 0.);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+@media (max-width: 968px) {
+  .portfolio-button {
+    width: 250px;
+    height: 400px; /* Adjust height as needed */
+    margin: 20px;
+  }
+
+  .portfolio-button:hover {
+    transform: scale(0.95); /* Adjust scale down effect */
+  }
+
+  .portfolio-button span {
+    bottom: 10px;
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}
