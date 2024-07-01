@@ -30,7 +30,7 @@
                                         font-size: 25px;
                                     ">Sabittwa.</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -128,10 +128,60 @@
       </div>
   </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>How to reach you.</p>
-    </section>
+  <section id="contact" class="full-screen">
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button class="submit" type="submit">Send Message</button>
+        </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+        <div class="cv-button">
+            <a href="./assets/cv.pdf" download>Download CV</a>
+        </div>
+        <div class="contact-details">
+            <p>Email: <a href="mailto:sabittwa.work@gmail.com">sabittwa.work@gmail.com</a></p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sabittwa-banerjee-ab52b5291/" target="_blank">
+                <img src="./assets/icons/2644994_linkedin_media_social_icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/strangely-true" target="_blank">
+                <img src="./assets/icons/211904_social_github_icon.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/strangely_true/" target="_blank">
+                <img src="./assets/icons/5335781_camera_instagram_social media_instagram logo_icon.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/strangely_false" target="_blank">
+                <img src="./assets/icons/11244080_x_twitter_elon musk_twitter new logo_icon.png" alt="Twitter">
+            </a>
+            <a href="https://wa.me/919831083313" target="_blank">
+                <img src="./assets/icons/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; Sabittwa Banerjee. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
     <script src="scripts.js"></script>
 </body>
 </html>
